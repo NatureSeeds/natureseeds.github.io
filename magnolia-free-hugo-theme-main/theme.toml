@@ -30,3 +30,7 @@ features = ["Responsive", "Modular", "Customizable", "SEO ready", "Google Analyt
 #     repo = "Link to source code of original theme"
 
 min_version="0.129.0"
+
+[module]
+[[module.imports]]
+path = "github.com/NatureSeeds/natureseeds.github.io"
