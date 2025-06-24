@@ -15,6 +15,7 @@
       "@assets/*": ["assets/*"],
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/*"]
+      "@/*": ["src/*"]
     }
 	}
 }
