@@ -1,21 +1,15 @@
 {
-	"compilerOptions": {
-		"experimentalDecorators": true,
+  "compilerOptions": {
+    "experimentalDecorators": true,
     "useDefineForClassFields": false,
-    "baseUrl": "src",
-		// Add type definitions for our Vite runtime.
-	  "types": ["astro/client"],
+    "baseUrl": ".",
     "paths": {
-      "@config": ["config/*"],
-      "@icons": ["icons/*"],
-      "@lib/*": ["lib/*"],
-      "@utils/*": ["utils/*"],
-      "@components/*": ["components/*"],
-      "@layouts/*": ["layouts/*"],
-      "@assets/*": ["assets/*"],
-      "@pages/*": ["pages/*"],
-      "@styles/*": ["styles/*"]
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*": ["src/pages/*"],
+      "@assets/*": ["src/assets/*"],
       "@/*": ["src/*"]
-    }
-	}
+    },
+    "types": ["astro/client"]
+  }
 }
