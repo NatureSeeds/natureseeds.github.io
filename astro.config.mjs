@@ -4,14 +4,17 @@ import mdx from "@astrojs/mdx";
 import icon from "astro-icon";
 import lit from "@astrojs/lit";
 
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://natureseeds.github.io/', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
-  sitemap: true, // Generate sitemap (set to "false" to disable)
-  integrations: [sitemap(), mdx(), lit(), icon()], // Add renderers to the config
-    vite: {
+  site: 'https://natureseeds.github.io/',
+  sitemap: true,
+  integrations: [sitemap(), mdx(), lit(), icon()],
+  vite: {
     resolve: {
       alias: {
+        '@components': '/src/components',
+        '@layouts': '/src/layouts',
+        '@pages': '/src/pages',
+        '@assets': '/src/assets',
         '@': '/src'
       }
     }
